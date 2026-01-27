@@ -18,8 +18,8 @@ Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con
   - [Paso 2: Inicializar la localización](#paso-2-inicializar-la-localización)
   - [Método 1: Control manual con RViz](#método-1-control-manual-con-rviz)
   - [Método 2: Misiones autónomas por script Python](#método-2-misiones-autónomas-por-script-python)
-- [🗺 Generación de Nuevos Mapas (SLAM)](#-generación-de-nuevos-mapas-slam)
-- [🔧 Solución de Problemas Comunes](#-solución-de-problemas-comunes)
+- [ Generación de Nuevos Mapas (SLAM)](#-generación-de-nuevos-mapas-slam)
+- [ Solución de Problemas Comunes](#-solución-de-problemas-comunes)
 - [Autor](#autor)
 
 ##  Características Principales
