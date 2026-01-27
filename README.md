@@ -1,5 +1,5 @@
 ```markdown
-# 🤖 NavBot: Navegación Autónoma con ROS 2 Jazzy y Gazebo Harmonic
+NavBot: Navegación Autónoma con ROS 2 Jazzy y Gazebo Harmonic
 
 ![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-FF6F00?style=for-the-badge&logo=gazebo&logoColor=white)
@@ -8,12 +8,12 @@
 
 Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con `slam_toolbox`) y el stack completo **Nav2** para navegación autónoma, evasión de obstáculos y planificación de rutas en **Gazebo Harmonic**.
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Características Principales](#-características-principales)
 - [Prerrequisitos](#-prerrequisitos)
 - [Instalación](#-instalación)
-- [🚀 Guía de Uso: Navegación Autónoma](#-guía-de-uso-navegación-autónoma)
+- [ Guía de Uso: Navegación Autónoma](#-guía-de-uso-navegación-autónoma)
   - [Paso 1: Iniciar la simulación](#paso-1-iniciar-la-simulación)
   - [Paso 2: Inicializar la localización](#paso-2-inicializar-la-localización)
   - [Método 1: Control manual con RViz](#método-1-control-manual-con-rviz)
@@ -22,7 +22,7 @@ Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con
 - [🔧 Solución de Problemas Comunes](#-solución-de-problemas-comunes)
 - [Autor](#autor)
 
-## ✨ Características Principales
+##  Características Principales
 
 - Simulación física realista en Gazebo Harmonic (robot diferencial con URDF/Xacro)
 - Sensores simulados: LIDAR 2D + odometría vía plugin `DiffDrive`
@@ -30,7 +30,7 @@ Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con
 - Navegación autónoma completa con **Nav2** (planificación global/local, recuperación, evasión dinámica)
 - Soporte para misiones programadas en Python usando `nav2_simple_commander`
 
-## 🛠 Prerrequisitos
+##  Prerrequisitos
 
 Ubuntu 24.04 + ROS 2 Jazzy Jalisco + Gazebo Harmonic instalados.
 
@@ -47,7 +47,7 @@ sudo apt install -y \
 
 **Nota:** `ros-jazzy-ros-gz-bridge` es **obligatorio** para comunicar ROS 2 con Gazebo Harmonic (tópicos como `/scan`, `/odom`, etc.).
 
-## 📦 Instalación
+##  Clonar
 
 1. Clona el repositorio en tu workspace:
 
@@ -70,7 +70,7 @@ colcon build --symlink-install
 source ~/ros2_ws/install/setup.bash
 ```
 
-## 🚀 Guía de Uso: Navegación Autónoma
+##  Guía de Uso: Navegación Autónoma
 
 ### Paso 1: Iniciar la simulación
 
@@ -161,7 +161,7 @@ ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/nav_bot/maps/mi_mapa_nue
 
 5. (Opcional) Edita el `.yaml` generado y verifica que el campo `image:` apunte correctamente al `.pgm`
 
-## 🔧 Solución de Problemas Comunes
+## Solución de Problemas Comunes
 
 - **"No map received" en RViz**  
   → En las propiedades del topic `/map` cambia **Durability Policy** a **Transient Local**
