@@ -1,5 +1,3 @@
-Aquí tienes una versión **actualizada, mejorada y más robusta** del archivo **README.md** para tu proyecto NavBot. He incorporado las mejoras sugeridas anteriormente, corregido problemas comunes en ROS 2 Jazzy + Gazebo Harmonic (especialmente el guardado del mapa), agregado paquetes recomendados, advertencias realistas y más claridad en los pasos.
-
 ```markdown
 # 🤖 NavBot: Navegación Autónoma con ROS 2 Jazzy y Gazebo Harmonic
 
