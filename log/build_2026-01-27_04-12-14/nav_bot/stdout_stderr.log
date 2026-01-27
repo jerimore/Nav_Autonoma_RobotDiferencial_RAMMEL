@@ -1,0 +1,17 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+running egg_info
+writing nav_bot.egg-info/PKG-INFO
+writing dependency_links to nav_bot.egg-info/dependency_links.txt
+writing entry points to nav_bot.egg-info/entry_points.txt
+writing requirements to nav_bot.egg-info/requires.txt
+writing top-level names to nav_bot.egg-info/top_level.txt
+reading manifest file 'nav_bot.egg-info/SOURCES.txt'
+writing manifest file 'nav_bot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jeremy/ros2_ws/install/nav_bot/lib/python3.12/site-packages/nav-bot.egg-link (link to .)
+Installing patrol script to /home/jeremy/ros2_ws/install/nav_bot/lib/nav_bot
+
+Installed /home/jeremy/ros2_ws/build/nav_bot
+running symlink_data

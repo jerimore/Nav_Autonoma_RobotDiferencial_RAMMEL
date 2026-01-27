@@ -1,0 +1,39 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+running egg_info
+creating nav_bot.egg-info
+writing nav_bot.egg-info/PKG-INFO
+writing dependency_links to nav_bot.egg-info/dependency_links.txt
+writing entry points to nav_bot.egg-info/entry_points.txt
+writing requirements to nav_bot.egg-info/requires.txt
+writing top-level names to nav_bot.egg-info/top_level.txt
+writing manifest file 'nav_bot.egg-info/SOURCES.txt'
+reading manifest file 'nav_bot.egg-info/SOURCES.txt'
+writing manifest file 'nav_bot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jeremy/ros2_ws/install/nav_bot/lib/python3.12/site-packages/nav-bot.egg-link (link to .)
+Installing patrol script to /home/jeremy/ros2_ws/install/nav_bot/lib/nav_bot
+
+Installed /home/jeremy/ros2_ws/build/nav_bot
+running symlink_data
+creating /home/jeremy/ros2_ws/install/nav_bot/share/ament_index
+creating /home/jeremy/ros2_ws/install/nav_bot/share/ament_index/resource_index
+creating /home/jeremy/ros2_ws/install/nav_bot/share/ament_index/resource_index/packages
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/resource/nav_bot -> /home/jeremy/ros2_ws/install/nav_bot/share/ament_index/resource_index/packages
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/package.xml -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot
+creating /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/launch
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/launch/navigation.launch.py -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/launch
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/launch/rsp.launch.py -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/launch
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/launch/sim.launch.py -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/launch
+creating /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/description
+creating /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/description/urdf
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/description/urdf/gazebo_control.xacro -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/description/urdf
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/description/urdf/lidar.xacro -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/description/urdf
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/description/urdf/robot.urdf.xacro -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/description/urdf
+creating /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/worlds
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/worlds/world.sdf -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/worlds
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/worlds/world_sim.sdf -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/worlds
+creating /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/maps
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/maps/mapa_final.yaml -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/maps
+symbolically linking /home/jeremy/ros2_ws/build/nav_bot/maps/mapa_final.pgm -> /home/jeremy/ros2_ws/install/nav_bot/share/nav_bot/maps

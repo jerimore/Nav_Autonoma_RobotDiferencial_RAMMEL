@@ -1,0 +1,1 @@
+/home/jeremy/ros2_ws/src/nav_bot/launch/navigation.launch.py

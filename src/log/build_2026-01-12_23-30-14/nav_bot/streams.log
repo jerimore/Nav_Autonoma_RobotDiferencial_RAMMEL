@@ -1,0 +1,41 @@
+[1.401s] Invoking command in '/home/jeremy/ros2_ws/src/build/nav_bot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jeremy/ros2_ws/src/build/nav_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeremy/ros2_ws/src/install/nav_bot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeremy/ros2_ws/src/build/nav_bot/build --no-deps symlink_data
+[1.794s] running develop
+[1.995s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[1.995s]   self.local_index = Environment(self.shadow_path + sys.path)
+[2.038s] running egg_info
+[2.038s] creating nav_bot.egg-info
+[2.059s] writing nav_bot.egg-info/PKG-INFO
+[2.060s] writing dependency_links to nav_bot.egg-info/dependency_links.txt
+[2.060s] writing entry points to nav_bot.egg-info/entry_points.txt
+[2.060s] writing requirements to nav_bot.egg-info/requires.txt
+[2.060s] writing top-level names to nav_bot.egg-info/top_level.txt
+[2.060s] writing manifest file 'nav_bot.egg-info/SOURCES.txt'
+[2.102s] reading manifest file 'nav_bot.egg-info/SOURCES.txt'
+[2.103s] writing manifest file 'nav_bot.egg-info/SOURCES.txt'
+[2.124s] running build_ext
+[2.124s] Creating /home/jeremy/ros2_ws/src/install/nav_bot/lib/python3.12/site-packages/nav-bot.egg-link (link to .)
+[2.125s] Installing patrol script to /home/jeremy/ros2_ws/src/install/nav_bot/lib/nav_bot
+[2.125s] 
+[2.125s] Installed /home/jeremy/ros2_ws/src/build/nav_bot
+[2.125s] running symlink_data
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/ament_index
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/ament_index/resource_index
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/ament_index/resource_index/packages
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/resource/nav_bot -> /home/jeremy/ros2_ws/src/install/nav_bot/share/ament_index/resource_index/packages
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/package.xml -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/launch
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/launch/navigation.launch.py -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/launch
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/launch/rsp.launch.py -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/launch
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/launch/sim.launch.py -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/launch
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/description
+[2.126s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/description/urdf
+[2.126s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/description/urdf/gazebo_control.xacro -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/description/urdf
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/description/urdf/lidar.xacro -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/description/urdf
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/description/urdf/robot.urdf.xacro -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/description/urdf
+[2.127s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/worlds
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/worlds/world.sdf -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/worlds
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/worlds/world_sim.sdf -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/worlds
+[2.127s] creating /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/maps
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/maps/mapa_final.yaml -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/maps
+[2.127s] symbolically linking /home/jeremy/ros2_ws/src/build/nav_bot/maps/mapa_final.pgm -> /home/jeremy/ros2_ws/src/install/nav_bot/share/nav_bot/maps
+[2.164s] Invoked command in '/home/jeremy/ros2_ws/src/build/nav_bot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jeremy/ros2_ws/src/build/nav_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jeremy/ros2_ws/src/install/nav_bot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jeremy/ros2_ws/src/build/nav_bot/build --no-deps symlink_data
