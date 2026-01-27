@@ -8,7 +8,7 @@ NavBot: Navegación Autónoma con ROS 2 Jazzy y Gazebo Harmonic
 
 Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con `slam_toolbox`) y el stack completo **Nav2** para navegación autónoma, evasión de obstáculos y planificación de rutas en **Gazebo Harmonic**.
 
-## Tabla de Contenidos
+Tabla de Contenidos
 
 - [Características Principales](#-características-principales)
 - [Prerrequisitos](#-prerrequisitos)
@@ -22,7 +22,7 @@ Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con
 - [ Solución de Problemas Comunes](#-solución-de-problemas-comunes)
 - [Autor](#autor)
 
-##  Características Principales
+Características Principales
 
 - Simulación física realista en Gazebo Harmonic (robot diferencial con URDF/Xacro)
 - Sensores simulados: LIDAR 2D + odometría vía plugin `DiffDrive`
@@ -30,7 +30,7 @@ Proyecto de simulación de un robot móvil diferencial que integra **SLAM** (con
 - Navegación autónoma completa con **Nav2** (planificación global/local, recuperación, evasión dinámica)
 - Soporte para misiones programadas en Python usando `nav2_simple_commander`
 
-##  Prerrequisitos
+Prerrequisitos
 
 Ubuntu 24.04 + ROS 2 Jazzy Jalisco + Gazebo Harmonic instalados.
 
