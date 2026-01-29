@@ -1,3 +1,30 @@
+# 🤖 NavBot: Navegación Autónoma con ROS 2 Jazzy y Gazebo Harmonic
+
+![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-FF6F00?style=for-the-badge&logo=gazebo&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+Este proyecto implementa una simulación completa de un robot móvil de tracción diferencial. Integra **SLAM** (Simultaneous Localization and Mapping) para la generación de mapas y el stack **Nav2** para la navegación autónoma, evasión de obstáculos y planificación de rutas.
+
+## ✨ Características Principales
+* **Simulación Física Realista:** Robot modelado en URDF/Xacro con propiedades inerciales y físicas.
+* **Sensores Simulados:** Lidar 2D (Ray Sensor) y Odometría precisa mediante plugin `DiffDrive`.
+* **Mapeo:** Generación de mapas de ocupación estáticos usando `slam_toolbox` en modo asíncrono.
+* **Navegación Inteligente:** Uso de Nav2 para ir de un Punto A a un Punto B esquivando obstáculos estáticos y dinámicos.
+## 🛠 Prerrequisitos
+Asegúrate de tener instalado lo siguiente en Ubuntu 24.04:
+
+* **ROS 2 Jazzy Jalisco**
+* **Gazebo Harmonic**
+* **Paquetes de Navegación y Simulación:**
+  ```bash
+  sudo apt update
+  sudo apt install ros-jazzy-navigation2 ros-jazzy-nav2-bringup \
+  ros-jazzy-slam-toolbox ros-jazzy-ros-gz-sim \
+  ros-jazzy-teleop-twist-keyboard ros-jazzy-xacro \
+  ros-jazzy-nav2-simple-commander
+
 ### Opción 1: Formato Markdown (Copiar y Pegar)
 
 ```markdown
