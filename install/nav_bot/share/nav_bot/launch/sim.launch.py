@@ -1,1 +1,0 @@
-/home/jeremy/ros2_ws/build/nav_bot/launch/sim.launch.py
