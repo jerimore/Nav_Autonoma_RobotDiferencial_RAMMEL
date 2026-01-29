@@ -116,13 +116,6 @@ Verás en la consola el progreso del desplazamiento. En la simulación, el robot
 
 ```
 
------
 
-### Cambios principales realizados:
 
-1.  **Bloques de Código:** Puse todos los comandos dentro de bloques \`\`\`bash ... \`\`\`. Esto hace que se vean como código real en GitHub y añade un botón automático de "copiar" para el usuario.
-2.  **Jerarquía:** Usé títulos (`##`) y negritas para separar claramente la fase de **Instalación** de la de **Ejecución**.
-3.  **Claridad en "Source":** Cambié "hacer referencia source" por "Configurar el entorno", que es más estándar, aunque mantuve el comando `source`.
-4.  **Flujo lógico:** Agrupé la verificación de errores y la inicialización (`2D Pose Estimate`) antes de presentar las opciones de movimiento, ya que son prerrequisitos para cualquiera de las opciones.
 
-```
