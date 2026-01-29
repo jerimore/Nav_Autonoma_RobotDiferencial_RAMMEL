@@ -143,6 +143,67 @@ Verás en la consola el progreso del desplazamiento. En la simulación, el robot
 
 ```
 
+🔧 Errores Comunes
+Error: "No map received" en RViz
 
+Causa 1: Política de QoS incorrecta.
+
+Solución: En RViz, ve a las propiedades del Tópico Map y cambia Durability Policy a Transient Local.
+
+Causa 2: En caso de haber ejecutado la simulacion con un nuevo mapa, asegurarse de realizar una Sesión de Mapeo (SLAM).
+Solucion 2: ¡Exacto! Ese es el "eslabón perdido". Si acabas de crear el mundo (`mi_mundo.sdf`), **Nav2 no puede funcionar todavía** porque no tiene el mapa (`.yaml` y `.pgm`) de ese lugar nuevo.
+
+El error "No map received" es lógico: Nav2 está buscando un archivo que aún no existe.
+
+Vamos a crearlo ahora mismo. Olvida el archivo `navigation.launch.py` por un momento. Tienes que hacer una **Sesión de Mapeo** (SLAM).
+
+Sigue estos 4 pasos para generar el YAML:
+
+### Paso 1: Abre tu Nuevo Mundo
+
+Lanza la simulación asegurándote de que cargue tu archivo `.sdf` nuevo:
+```bash
+# Terminal 1
+ros2 launch nav_bot sim.launch.py
+
+```
+### Paso 2: Inicia el Mapeador (SLAM)
+Usa `slam_toolbox` para dibujar el mapa en vivo.
+
+```bash
+# Terminal 2
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
+
+```
+*En RViz, deberías ver cómo el mapa empieza a aparecer (gris/blanco) alrededor del robot.*
+
+### Paso 3: Explora!
+El mapa no se hace solo. Tienes que mover el robot por **todo** tu mundo nuevo para que el láser lo registre.
+
+```bash
+# Terminal 3
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+```
+*Conduce hasta que tu mundo se vea completo y nítido en RViz.*
+### Paso 4: Genera el YAML (El paso que faltaba)
+Una vez que el mapa se vea bien en RViz, ejecuta este comando para guardarlo en tu disco:
+```bash
+# Terminal 4
+ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/nav_bot/maps/mapa_nuevo
+```
+**¡Listo!** Ahora sí tienes el archivo `mapa_nuevo.yaml` y `mapa_nuevo.pgm`.
+Ahora puedes cerrar todo y volver a ejecutar tu archivo maestro `navigation.launch.py` (asegurándote de haber actualizado la ruta dentro del archivo para que apunte a este `mapa_nuevo.yaml`).
+
+
+Error: El robot no detecta obstáculos (Lidar no visible)
+Causa: Falta el plugin de sensores en el mundo SDF.
+Solución: Asegúrate de que tu archivo .sdf incluye <plugin name='gz::sim::systems::Sensors' ...>.
+
+Error: El mapa no carga al iniciar navigation.launch.py
+
+Causa: El archivo .yaml no se encuentra.
+
+Solución: Verifica que el nombre del mapa en navigation.launch.py coincida con el archivo en la carpeta maps/ y que hayas recompilado con colcon build.
 
 
